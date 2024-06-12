@@ -1,0 +1,137 @@
+#navbar {
+    padding: 2rem 3rem;
+  }
+
+#navbar-right div:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.flex {
+    display: flex;
+}
+  
+.flex.space-between {
+    justify-content: space-between;
+}
+  
+.flex.align-center {
+    align-items: center;
+} 
+  
+.flex.gap.gap-1 {
+    gap: 2rem;
+}
+
+.text.fw-700 {
+    font-weight: 700;
+  }
+  
+  .text.fw-600 {
+    font-weight: 600;
+  }
+  
+  .text.fw-500 {
+    font-weight: 500;
+  }
+  
+  .text.fw-400 {
+    font-weight: 400;
+  }
+  
+  .text.fw-200 {
+    font-weight: 200;
+  }
+
+@font-face {
+    font-family: "Inknut_Antiqua";
+    font-weight: 200;
+    src: url("Inknut_Antiqua/InknutAntiqua-Light.ttf");
+  }
+  
+  @font-face {
+    font-family: "Inknut_Antiqua";
+    font-weight: 400;
+    src: url("Inknut_Antiqua/InknutAntiqua-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "Inknut_Antiqua";
+    font-weight: 500;
+    src: url("Inknut_Antiqua/InknutAntiqua-Medium.ttf");
+  }
+  
+  @font-face {
+    font-family: "Inknut_Antiqua";
+    font-weight: 600;
+    src: url("Inknut_Antiqua/InknutAntiqua-SemiBold.ttf");
+  }
+  
+  @font-face {
+    font-family: "Inknut_Antiqua";
+    font-weight: 700;
+    src: url("Inknut_Antiqua/InknutAntiqua-Bold.ttf");
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inknut_Antiqua";
+}
+
+body{
+    background-image: url(image/background.jpg);
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card{
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    padding: 16px;
+}
+
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content p{
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.card-content .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+}
+
+.btn:hover{
+    letter-spacing: 2px;
+    transition: 0.3s ease-in-out;
+}

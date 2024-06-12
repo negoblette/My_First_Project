@@ -1,0 +1,242 @@
+body,
+#homepage,
+#homepage-content {
+  width: 100vw;
+  height: 100vh;
+}
+
+#homepages-container,
+#homepage-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#homepage {
+  background-image: url("image/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#homepages-container {
+  width: calc(100vw - 6rem);
+  max-width: 1200px; /* Added max-width for responsiveness */
+  height: 80vh;
+}
+
+#navbar {
+  padding: 2rem 3rem;
+}
+
+.text.fw-700 {
+  font-weight: 700;
+}
+
+.text.fw-600 {
+  font-weight: 600;
+}
+
+.text.fw-500 {
+  font-weight: 500;
+}
+
+.text.fw-400 {
+  font-weight: 400;
+}
+
+.text.fw-200 {
+  font-weight: 200;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.space-between {
+  justify-content: space-between;
+}
+
+.flex.align-center {
+  align-items: center;
+}
+
+
+.flex.gap.gap-1 {
+  gap: 2rem;
+}
+
+#content-image {
+  position: relative;
+}
+
+.baconEgg1 {
+  position: absolute; /* Position on top of the first */
+  top: 200px;
+  left: 400px;
+  border-radius: 12px;
+}
+
+.garlicBread1 {
+  position: absolute; /* Position on top of the first */
+  top: 50px;
+  left: 300px;
+  border-radius: 12px;
+}
+
+.katsu1 {
+  /* Style for the second image */
+  position: absolute; /* Position on top of the first */
+  top: 150px; /* Center vertically */
+  left: 350px; /* Center horizontally */
+  transform: translate(-50%, -50%); /* More precise centering */
+  /* width: 30%; */
+  border-radius: 12px; /* Example: Add a border */
+}
+
+.pigBlanket1 {
+  /* Style for the third image */
+  position: absolute; /* Position on top of the others */
+  top: 175px; /* Example: Offset from the top by 20px */
+  left: 135px; /* Example: Offset from the right by 20px */
+  /* width: 30%; */
+  border-radius: 12px;
+}
+
+#homepage-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+  margin-left: 35rem;
+}
+
+#promotional-text {
+  width: 50%;
+  padding-top: 5rem;
+  padding-left: 10rem;
+  font-size: 20px;
+}
+
+#promotional-text p,
+#promotional-text ul {
+  margin: 0 0 1rem 0;
+}
+
+#promotional-text ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#promotional-text ul li {
+  margin-bottom: 1rem;
+}
+
+@font-face {
+  font-family: "Inknut_Antiqua";
+  font-weight: 200;
+  src: url("Inknut_Antiqua/InknutAntiqua-Light.ttf");
+}
+
+@font-face {
+  font-family: "Inknut_Antiqua";
+  font-weight: 400;
+  src: url("Inknut_Antiqua/InknutAntiqua-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inknut_Antiqua";
+  font-weight: 500;
+  src: url("Inknut_Antiqua/InknutAntiqua-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Inknut_Antiqua";
+  font-weight: 600;
+  src: url("Inknut_Antiqua/InknutAntiqua-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Inknut_Antiqua";
+  font-weight: 700;
+  src: url("Inknut_Antiqua/InknutAntiqua-Bold.ttf");
+}
+
+body,
+input {
+  font-family: "Inknut_Antiqua" !important;
+}
+
+
+#navbar-right div:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer; /* Change cursor on hover */
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+  #homepage-content {
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-left: 2rem;
+  }
+
+  #promotional-text {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+  }
+
+  #promotional-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .baconEgg1,
+  .katsu1,
+  .pigBlanket1 {
+    position: static;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-image: url(image/background.jpg);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Inknut_Antiqua";
+    overflow: hidden;
+    height: 100vh;
+}
+
+h1{
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+h1.title{
+    font-size: 30px;
+    line-height: 45px;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(12, 64, 74, 0.5);
+}
+
+p {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin: 20px 0 30px;
+    text-shadow: 0 0 10px rgba(12, 64, 74, 0.5);
+}

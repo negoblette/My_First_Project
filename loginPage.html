@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Register Page</title>
+    <script type="text/javascript" src="function.js" defer></script>
+    <script src="data.js"></script>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+
+  <body>
+    <div id="navbar" class="flex space-between">
+      <div id="navbar-right" class="flex align-center gap gap-1">
+        <div id="homeButton" onclick="goToHome()">
+          <h3>Home</h3>
+        </div>
+        <div id="testiButton" onclick="goToTesti()">
+          <h3>Testimonial</h3>
+        </div>
+        <div id="productButton" onclick="goToProduct()">
+          <h3>Product</h3>
+        </div>
+        <div id="aboutUsButton" onclick="goToAboutUs()">
+          <h3>About Us</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="container">
+      <div class="form-container register-container">
+        <form action="">
+          <h1>Register</h1>
+          <input type="text" name="name" placeholder="Name" />
+          <input type="email" name="email" placeholder="Email" />
+          <input type="address" name="address" placeholder="Address" />
+          <label for="date">Date of Birth:</label>
+          <input type="date" name="date" placeholder="Date of Birth" />
+          <div class="radio-button">
+            <input
+              type="radio"
+              class="radio"
+              id="gender1"
+              name="gender"
+              value="male"
+            />
+            <label for="gender1">Male</label>
+            <input
+              type="radio"
+              class="radio"
+              id="gender2"
+              name="gender"
+              value="female"
+            />
+            <label for="gender2">Female (Click your gender)</label>
+          </div>
+          <button>Register</button>
+        </form>
+      </div>
+      <div class="form-container login-container">
+        <form action="#">
+          <h1>Login</h1>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <button>Login</button>
+        </form>
+      </div>
+
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1 class="title">Hello Friends</h1>
+            <p>If you have an Account, Login Here!</p>
+            <button class="ghost" id="login">Login</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1 class="title">Start Your Journey Now!</h1>
+            <p>If you dont have an Account, Register Here!</p>
+            <button class="ghost" id="register">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

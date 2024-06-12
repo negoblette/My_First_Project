@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styleContactUs.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a onclick="goToHome()" id="logo" class="brand">Vkelloggs</a>
+        </div>
+        <div class="navbar-right">
+            <a onclick="goToHome()" class="nav-item">Home</a>
+            <a onclick="goToProduct()" class="nav-item">Product</a>
+            <a onclick="goToRecipes()" class="nav-item">Recipes</a>
+            <a onclick="goToAboutUs()" class="nav-item">About Us</a>
+            <a href="#" class="nav-item">Contact</a>
+        </div>
+    </nav>
+
+    <div id="bgForms">
+        <div id="bgForm">
+            <div>
+                <h2 id="contact">Contact Us</h2>
+            </div>
+            <div class="label">
+                <label for="">Your Name: </label>
+            </div>
+            <br>
+            <div>
+                <div class="inline">
+                    <input type="text" placeholder="First Name" name="first" id="first" class="input pd name" required>
+                    <div id="errorMessageFirst" name="errorMessageFirst" id="errorMessageFirst" class="others" style="color: red;"></div>
+                </div>
+                <br>
+                <div class="inline">
+                    <input type="text" placeholder="Last Name" name="last" id="last" class="input pd name" required>
+                    <div id="errorMessageLast" name="errorMessageLast"  class="others" style="color: red;"></div>
+                </div>
+            </div>
+            <br>
+            <div class="label">
+                <label for="">Email: </label>
+            </div>
+            <br>
+            <div>
+                <input type="text" id="email" name="email" class="input others fontInput pd" placeholder="Eg. example@gmail.com" required>
+                <div id="errorMessage" name="errorMessage" class="others" style="color: red;"></div>
+            </div>
+            <br>
+            <div class="label">
+                <label for="">Password</label>
+            </div>
+            <br>
+            <div>
+                <input type="password" name="password" id="password" class="input others fontInput pd">
+                <p id="pwError" name="pwError" class="others" style="color: red;"></p>
+            </div>
+            <br>
+            <div class="label">
+                <label for="">Telephone: </label>
+            </div>
+            <br>
+            <div>
+                <input type="tel" id="tel" name="tel" class="input others fontInput pd" placeholder="Eg. 081122334455">
+                <div id="errorMessageTel" name="tel" class="others" style="color: red;"></div>
+                
+            </div>
+            <br>
+            <div class="label">
+                <label for="">Inquiry:  </label>
+            </div>
+            <br>
+            <div>
+                <textarea name="message" id="textArea" placeholder="Inquiry" class="others fontInput"></textarea>
+            </div>
+                       
+            <br>
+            <br>
+            <div class="button">
+                <button type="button" onclick="validateForm()" class="btn">Submit</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2 class="logo-text">Vkelloggs</h2>
+                <p class="mtFoot">
+                    Vkelloggs is dedicated to bringing you the best breakfast options with a variety of products to suit all tastes.
+                </p>
+                <div class="contact">
+                    <span>Phone: +123-456-789</span>
+                    <span>Email: info@vkelloggs.com</span>
+                </div>
+            </div>
+
+            <div class="footer-section links quick">
+                <h2>Quick Links</h2>
+                <br>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a onclick="goToProduct()">Product</a></li>
+                    <li><a onclick="goToRecipes()">Recipes</a></li>
+                    <li><a onclick="goToAboutUs()">About Us</a></li>
+                    <li><a onclick="goToContactUs()">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+    
+    <script src="scriptForm.js">
+        
+    </script>
+</body>
+</html>
